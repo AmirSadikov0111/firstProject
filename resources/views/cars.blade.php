@@ -15,17 +15,15 @@
   
   <form action="/cars" method="POST">
     @csrf
-    <label for="">Cars Name</label>
+    <p>Cars Name</p>
     <input type="text" name="name">
 
     <br>
-    <br>
-
-    <label for="">Cars Price</label>
+      <p>Cars Price</p>
     <input type="text" name="price">
-
     <br>
-    <button class="btn btn-primary" type="submit">OK</button>
+    <br>
+    <button type="submit">OK</button>
   </form>
 
 </body>

@@ -1,6 +1,5 @@
 <?php
 
-use App\Models\Product;
 use App\Models\cars;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -32,5 +31,5 @@ Route::post('/car', function(Request $request)
         'name' => $request->name,
         'price' => $request->price,
     ]);
-    return 'Yes';
+    return 'Проверь!';
 });
