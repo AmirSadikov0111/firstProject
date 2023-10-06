@@ -1,5 +1,8 @@
 <?php
 
+use App\Models\Product;
+use App\Models\cars;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,3 +20,17 @@ use Illuminate\Support\Facades\Route;
 Route::view('/project1','project1');
 
 Route::view('/project2','project2');
+
+
+
+
+Route::view('/cars','cars');
+
+Route::post('/car', function(Request $request)
+{
+     Cars::create([
+        'name' => $request->name,
+        'price' => $request->price,
+    ]);
+    return 'Yes';
+});
